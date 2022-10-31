@@ -1,20 +1,24 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css">
-    <style>
-      h1 {
-        color: red;
-      }
-    </style>
+    <script src="modal.js"></script>
     <script src="scripts.js"></script>
-    <script>
-      console.log("Hello from helloworld.html")
-    </script>
   </head>
   <body>
     <header>
       <h1>Hello World</h1>
     </header>
-    <p>It is sunny today</p>
+    <button class="click-me">Click me</button>
+    <button class="other">Other</button>
+    <p class="confirmation-output">You just clicked "<span id="confirmation-choice">anything?!</span>"</p>
+    <div class="overlay">
+      <div id="confirmation-modal">
+        <h1 id="confirmation-message">Are you sure you want to continue?</h1>
+        <section>
+          <button class="button green" id="confirmation-yes">Yes</button>
+          <button class="button grey" id="confirmation-cancel">Cancel</button>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
