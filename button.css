@@ -1,0 +1,23 @@
+.button {
+  padding: 13px 25px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  
+}
+
+.button.green {
+  background: green;
+}
+
+.button.green:hover {
+  background: darkgreen;
+}
+.button.grey {
+  background: grey;
+}
+
+.button.grey:hover {
+  background: darkgrey;
+}

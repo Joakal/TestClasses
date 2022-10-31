@@ -1,4 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600&display=swap');
+@import url('button.css');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
 h1 {
-  color: pink;
   text-align: center;
+}
+
+#confirmation-modal {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  flex-direction: column;
+  background: white;
+  padding: 60px 40px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hidden {
+  display:none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  background: rgba(0,0,0, 0.7);
+  width: 100vw;
+  height: 100vh;
 }
