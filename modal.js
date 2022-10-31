@@ -22,7 +22,6 @@ class Dialog {
     // Set the button events
       yesButton.addEventListener('click', this.clickYes.bind(this))
       cancelButton.addEventListener('click', this.clickCancel.bind(this))
-      cancelButton.removeEventListener('click', this.clickCancel.bind(this))
     }
 
     this.initialised = true;
