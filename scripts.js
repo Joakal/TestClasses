@@ -1,12 +1,15 @@
-console.log("Hello from scripts.js");
+document.onreadystatechange = function () {
+  if (document.readyState == "interactive") {
+    const clickMeButton = document.querySelector('.click-me')
+    const otherButton = document.querySelector('.other')
+    new Dialog({
+      buttonElement: clickMeButton,
+      dialogMessage: "What's the weather today?"
+    });
 
-class Foo {
-
-  hello() {
-    console.log('Hello foo sho')
+    new Dialog({
+      buttonElement: otherButton,
+      dialogMessage: "Is it true or false?"
+    });
   }
 }
-
-const newFoo = new Foo()
-
-newFoo.hello()
